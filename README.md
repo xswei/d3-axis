@@ -124,7 +124,7 @@ axis.ticks(10);
 axis.tickArguments([10]);
 ```
 
-<a name="axis_tickArguments" href="#axis_tickArguments">#</a> <i>axis</i>.<b>tickArguments</b>([<i>arguments</i>]) [源>源码](https://github.com/d3/d3-axis/blob/master/src/axis.js#L128 "Source")
+<a name="axis_tickArguments" href="#axis_tickArguments">#</a> <i>axis</i>.<b>tickArguments</b>([<i>arguments</i>]) [<源码>](https://github.com/d3/d3-axis/blob/master/src/axis.js#L128 "Source")
 
 如果设置了 *arguments* 则将其传递给 [*scale*.ticks](https://github.com/d3/d3-scale/blob/master/README.md#continuous_ticks) 和 [*scale*.tickFormat](https://github.com/d3/d3-scale/blob/master/README.md#continuous_tickFormat) 并且返回当前坐标轴生成器。也就是 *arguments* 依赖 [axis’ scale](#axis_scale): 大多数情况下建议传入一个期望的 `ticks`个数: *count* (或者当使用时间比例尺时传入 [time *interval*](https://github.com/d3/d3-time)), 或者是 [format *specifier*](https://github.com/d3/d3-format) 定义刻度的展示格式。
 
@@ -179,14 +179,14 @@ axis.ticks(10, ",f");
 
 如果指定了 *size* 则设置 [内侧](#axis_tickSizeInner) 和 [外侧](#axis_tickSizeOuter) 刻度的大小，并返回坐标轴生成器。如果没有指定 *size* 则返回当前的刻度大小，默认为 6。
 
-<a name="axis_tickSizeInner" href="#axis_tickSizeInner">#</a> <i>axis</i>.<b>tickSizeInner</b>([<i>size</i>]) [源>源码](https://github.com/d3/d3-axis/blob/master/src/axis.js#L144 "Source")
+<a name="axis_tickSizeInner" href="#axis_tickSizeInner">#</a> <i>axis</i>.<b>tickSizeInner</b>([<i>size</i>]) [<源码>](https://github.com/d3/d3-axis/blob/master/src/axis.js#L144 "Source")
 
 如果指定了 *size* 则设置内侧刻度大小，如果没有指定 *size* 则返回当前的刻度大小，默认为 6。内侧刻度大小控制着刻度线的长度。
 
-<a name="axis_tickSizeOuter" href="#axis_tickSizeOuter">#</a> <i>axis</i>.<b>tickSizeOuter</b>([<i>size</i>]) [源>源码](https://github.com/d3/d3-axis/blob/master/src/axis.js#L148 "Source")
+<a name="axis_tickSizeOuter" href="#axis_tickSizeOuter">#</a> <i>axis</i>.<b>tickSizeOuter</b>([<i>size</i>]) [<源码>](https://github.com/d3/d3-axis/blob/master/src/axis.js#L148 "Source")
 
 如果指定了 *size* 则设置外侧刻度大小，如果没有指定 *size* 则返回当前的刻度大小，默认为 6。外侧刻度大小控制着刻度线的长度。外侧刻度表示的是坐标轴最外侧两端的刻度线。内侧刻度和外侧刻度不同，内侧刻度是一个个单独的 `line` 元素，而外侧刻度则实际上是坐标轴线 `path` 的一部分。此外外侧刻度可能和第一个或最后一个内侧刻度重合。
 
-<a name="axis_tickPadding" href="#axis_tickPadding">#</a> <i>axis</i>.<b>tickPadding</b>([<i>padding</i>]) [源>源码](https://github.com/d3/d3-axis/blob/master/src/axis.js#L152 "Source")
+<a name="axis_tickPadding" href="#axis_tickPadding">#</a> <i>axis</i>.<b>tickPadding</b>([<i>padding</i>]) [<源码>](https://github.com/d3/d3-axis/blob/master/src/axis.js#L152 "Source")
 
 如果设置了 *padding* 则设置刻度和刻度文本之间的间距，如果没有指定 *padding* 则返回当前的间距，默认为 3 像素。
