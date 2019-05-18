@@ -30,11 +30,11 @@ d3.select("body").append("svg")
     .call(axis);
 ```
 
-坐标轴组件创建的元素遵循元素公共 API，因此可以自由的设置外部样式或者修改元素来 [customize the axis appearance(自定义器表现形式)](https://bl.ocks.org/mbostock/3371592)
+坐标轴组件创建的元素遵循元素公共 API，因此可以自由的设置外部样式或者修改元素来 [(自定义表现形式)](https://bl.ocks.org/mbostock/3371592)
 
 [<img alt="Custom Axis" src="https://raw.githubusercontent.com/d3/d3-axis/master/img/custom.png" width="420" height="219">](http://bl.ocks.org/mbostock/3371592)
 
-坐标轴组件包含类名为 “domain” 的 [path元素](https://www.w3.org/TR/SVG/paths.html#PathElement) 表示比例尺的输入范围，一组类名为 “tick” 的并且被坐标变换的 [g elements](https://www.w3.org/TR/SVG/struct.html#Groups) 表示比例尺的刻度。每个刻度包含一个 [line element](https://www.w3.org/TR/SVG/shapes.html#LineElement) 表示刻度线以及一个 [text element](https://www.w3.org/TR/SVG/text.html#TextElement) 表示刻度标签。例如，刻度朝下的坐标轴组件结构如下：
+坐标轴组件包含类名为 “domain” 的 [path元素](https://www.w3.org/TR/SVG/paths.html#PathElement) 表示比例尺的输入范围，一组类名为 “tick” 的并且被坐标变换的 [g 元素](https://www.w3.org/TR/SVG/struct.html#Groups) 表示比例尺的刻度。每个刻度包含一个 [line 元素](https://www.w3.org/TR/SVG/shapes.html#LineElement) 表示刻度线以及一个 [text 元素](https://www.w3.org/TR/SVG/text.html#TextElement) 表示刻度标签。例如，刻度朝下的坐标轴组件结构如下：
 
 ```html
 <g fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
@@ -86,7 +86,7 @@ d3.select("body").append("svg")
 
 <a name="_axis" href="#_axis">#</a> <i>axis</i>(<i>context</i>) [<源码>](https://github.com/d3/d3-axis/blob/master/src/axis.js#L40 "Source")
 
-将坐标轴渲染到指定的 *context*， *context* 可能是一个包含SVG元素的 [selection](https://github.com/d3/d3-selection)(SVG 或者 G 元素) 也可能是一个 [transition](https://github.com/d3/d3-transition).
+将坐标轴渲染到指定的 *context*, *context* 可能是一个包含SVG元素的 [selection](https://github.com/d3/d3-selection)(SVG 或者 G 元素) 也可能是一个 [transition](https://github.com/d3/d3-transition).
 
 <a name="axis_scale" href="#axis_scale">#</a> <i>axis</i>.<b>scale</b>([<i>scale</i>]) [<源码>](https://github.com/d3/d3-axis/blob/master/src/axis.js#L120 "Source")
 
